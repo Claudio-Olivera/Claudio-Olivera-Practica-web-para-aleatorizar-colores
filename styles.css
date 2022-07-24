@@ -105,6 +105,7 @@ font-size: 28px;
 /* DIV CON EL MENSAJE Y EL BOTON */
 .container{
     margin-top: 80px;
+    cursor:pointer;
 }
 
 .container-h2{
