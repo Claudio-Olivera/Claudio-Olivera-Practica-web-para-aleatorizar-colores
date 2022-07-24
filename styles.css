@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* BODY */
+.body{
+    font-family: 'Press Start 2P', cursive;
+}
+/* TITULO H1 */
+.div-h1{
+display: grid;
+gap: 1rem;
+grid-auto-rows: 10rem;
+grid-template-columns: repeat(auto-fill, minmax(75rem, 1fr));
+
+
+}
+
+.h1{
+    background-clip: text ;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(75rem, 1fr));
+    margin-top: 4rem;
+    font-size: 4.5rem;
+    text-align: center;
+    /* aca empiezan las configuraciones para hacer posible la "animacion" */
+    color: transparent;
+    background-image:linear-gradient(to left, #ff3c00, #2500f8, #fbff00, #48ff00, #ff00aa);    
+    -webkit-background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 50%;    
+    
+
+}
+/* mas configuraciones para hacer posible la "animacion" */
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* NAVEGACION */
+.nav{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 7rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 75rem), 1fr));
+}
+
+
+
+.nav-li{
+    display:grid;
+    gap:2rem;
+    grid-auto-rows: 2rem;
+    grid-template-columns:repeat(auto-fill, minmax(75rem, 1fr));
+}
+
+.nav-a{
+text-decoration: none;
+text-align: center;
+font-size: 28px;
+}
+/* MAIN */
+.main{
+    display:grid;
+    gap:20rem;
+    grid-auto-rows: 2rem;
+    grid-template-columns:repeat(auto-fill, minmax(70rem, 1fr));
+}
+/* donde estan los textos, le doy letra, margen superior, los centro y le doy interlineado y tamaño */
+.article{
+    margin-top: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   line-height: 28px;
+   font-size: 30px;
+   
+}
+
+.paragraph-two{
+   color: white;
+}
+/* desaparecer el texto del parrafo 2 , hacer un interlineado mas grande a parrafo y modificar tamaño de background color */
+@media (max-width: 600px) {
+    .paragraph-two {
+      display: none;
+    }
+    .paragraph{
+        line-height: 190%;
+      
+    }
+    .container-h2{
+        margin-bottom: 80px;
+        font-size: 30px;
+    }
+  }
+/* DIV CON EL MENSAJE Y EL BOTON */
+.container{
+    margin-top: 80px;
+}
+
+.container-h2{
+    display:grid;
+    gap:1rem;
+    grid-auto-rows: 1rem;
+    grid-template-columns:repeat(auto-fill, minmax(75rem, 1fr));
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display:grid;
+    gap:1rem;
+    grid-auto-rows: 4rem;
+    grid-template-columns:repeat(auto-fill, minmax(30rem, 1fr));
+    margin: auto;
+     
+    /* un simple border radius al boton */
+
+    border-radius: 30px 10px 30px 10px;
+  
+    /* referido al texto del boton */
+     
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    line-height: 65px;
+
+    /* para hacer el efecto de colores */
+
+    color: transparent;
+    background-image:linear-gradient(to left, #ff3c00, #2500f8, #fbff00, #48ff00, #ff00aa);    
+    -webkit-background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 50%;    
+}
+
+/* algo para probar */
